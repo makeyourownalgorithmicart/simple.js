@@ -24,10 +24,15 @@ function square(x, y, w) {
 
 // randomNumber
 // intuitive random integers
-function randomNumber(n) {
-	return int(random(n));
-}
 
-function randomNumber(a,b) {
-	return int(random(a,b));
+// random up to n (but not including)
+// random between a and b, not including b
+function randomNumber() {
+
+	if (arguments.length == 1) {
+		return int( random(arguments[0] + 1) );
+	}
+	else if (arguments.length == 2) {
+		return int( random(arguments[0], arguments[1] + 1) );
+	}
 }
