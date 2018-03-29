@@ -16,7 +16,7 @@ function setup() {
 
 function draw() {
   
-  // normal ellipse
+  // built in ellipse command
   ellipse(300, 300, 200);
 
   // simpler circle
