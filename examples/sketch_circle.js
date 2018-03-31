@@ -21,6 +21,6 @@ function draw() {
 
   // simpler circle
   // centred at (500, 300) with diameter 100
-  circle(500, 300, 100);
+  circle(500, 300, 200);
 
 }
