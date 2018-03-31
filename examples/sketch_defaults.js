@@ -10,7 +10,7 @@ function setup() {
 function draw() {
   // put drawing code here
 
-  circle(400, 300, randomNumber(50,100));
+  circle(400, 300, randomNumber(100,200));
   text("circle should not be moving due to noLoop() default", 100, 100);
 
 }

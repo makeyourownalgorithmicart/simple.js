@@ -20,7 +20,7 @@ function draw() {
   ellipse(300, 300, 200);
 
   // simpler circle
-  // centred at (500, 300) with radius 100
+  // centred at (500, 300) with diameter 100
   circle(500, 300, 100);
 
 }
