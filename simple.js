@@ -25,9 +25,8 @@ function simple() {
 
 // circle
 // friendlier than ellipse
-// uses radius not diameter
-function circle(x, y, radius) {
-	ellipse(x, y, 2*radius);
+function circle(x, y, diameter) {
+	ellipse(x, y, diameter);
 }
 
 // square
