@@ -8,6 +8,21 @@
 
 */
 
+
+// simple defaults
+// ideally these should be invoked automatically
+// currently needs simpl() in setup()
+function simple() {
+	// stop repeating draw()
+	noLoop();
+
+	// thicker default lines
+	strokeWeight(2);
+
+	// red fill
+	fill('yellow');
+}
+
 // circle
 // friendlier than ellipse
 // uses radius not diameter
