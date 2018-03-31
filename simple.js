@@ -9,7 +9,8 @@
 */
 
 
-// simple defaults
+//// simple defaults ////
+
 // ideally these should be invoked automatically
 // currently needs simpl() in setup()
 function simple() {
@@ -19,9 +20,16 @@ function simple() {
 	// thicker default lines
 	strokeWeight(2);
 
+	// background so it is visible
+	background('lightgrey');
+
 	// red fill
 	fill('yellow');
 }
+
+
+
+//// simple shapes ////
 
 // circle
 // friendlier than ellipse
@@ -36,6 +44,8 @@ function square(x, y, w) {
 }
 
 
+//// simple convenience functions ////
+
 // randomNumber
 // intuitive random integers
 
@@ -49,4 +59,17 @@ function randomNumber() {
 	else if (arguments.length == 2) {
 		return int( random(arguments[0], arguments[1] + 1) );
 	}
+}
+
+
+//// easier repeat function, inspired  by logo's repeat 5 [] ////
+
+// repeat takes a function and repeats it a given number of times
+// credit https://stackoverflow.com/questions/49041124/creating-a-custom-loop-for-children-to-use-eg-repeat5-code-to-be-executed
+function repeat(n, fn) {
+
+	for (var i = 0; i < n; i += 1) {
+		fn();
+	}
+
 }
