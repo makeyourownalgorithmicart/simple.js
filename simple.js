@@ -66,10 +66,26 @@ function randomNumber() {
 
 // repeat takes a function and repeats it a given number of times
 // credit https://stackoverflow.com/questions/49041124/creating-a-custom-loop-for-children-to-use-eg-repeat5-code-to-be-executed
-function repeat(n, fn) {
+function repeat() {
 
-	for (var i = 0; i < n; i += 1) {
-		fn();
+	if (arguments.length == 2) {
+		// repeat(n, fn)
+		for (var i = 0; i < arguments[0]; i += 1) {
+			// call supplied function
+			arguments[1]();
+		}
+
+	}
+	else if (arguments.length == 4) {
+
+		// repeat(start, end, step, fn(i) )
+		for (var i = arguments[0]; i <= arguments[1]; i += arguments[2]) {
+			// call supplied function with loop counter
+			arguments[3](i);
+		}
+
 	}
 
+
 }
+
