@@ -89,3 +89,11 @@ function repeat() {
 
 }
 
+
+//// British spelling of colour ////
+
+// function colour() is effectively an alias for color()
+// here we simply pass on the arguments to color()
+function colour(...args) {
+	return color(...args);
+}
