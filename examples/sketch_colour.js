@@ -27,5 +27,10 @@ function draw() {
   fill(c2);
   circle(500, 300, 200);
 
+  // use British colour, different argument form
+  var c3 = colour(128, 100);
+  fill(c3);
+  circle(400, 300, 200);
+
 }
 
