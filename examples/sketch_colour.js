@@ -32,5 +32,11 @@ function draw() {
   fill(c3);
   circle(400, 300, 200);
 
+  // HSB mode
+  colourMode(HSB);
+  var c4 = colour(230, 100, 100, 0.7);
+  fill(c4);
+  circle(400, 300, 100);
+
 }
 
