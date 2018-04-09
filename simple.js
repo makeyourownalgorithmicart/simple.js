@@ -97,3 +97,17 @@ function repeat() {
 function colour(...args) {
 	return color(...args);
 }
+
+// alias for colorMode()
+function colourMode(...args){
+	colorMode(...args);
+}
+
+
+//// rectangle() not just rect() ////
+
+// function rectangle() is effectively an alias for rect()
+// here we simply pass on the arguments to rect()
+function rectangle(...args) {
+	return rect(...args);
+}
