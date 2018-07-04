@@ -12,8 +12,12 @@
 //// simple defaults ////
 
 // ideally these should be invoked automatically
-// currently needs simpl() in setup()
+// currently needs simple() in setup()
 function simple() {
+	// default canvas size
+	createCanvas(800,600);
+
+
 	// stop repeating draw()
 	noLoop();
 
