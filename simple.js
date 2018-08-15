@@ -70,6 +70,7 @@ function randomNumber() {
 
 // repeat takes a function and repeats it a given number of times
 // credit https://stackoverflow.com/questions/49041124/creating-a-custom-loop-for-children-to-use-eg-repeat5-code-to-be-executed
+// updated to allow outer-inner loops
 function repeat() {
 
 	if (arguments.length == 2) {
@@ -86,6 +87,21 @@ function repeat() {
 		for (var i = arguments[0]; i <= arguments[1]; i += arguments[2]) {
 			// call supplied function with loop counter
 			arguments[3](i);
+		}
+
+	} else if (arguments.length == 7) {
+		// loop within a loop, also known as a nested loop
+		// repeat(outerloop_start, outerloop_end, outerloop_step, innerloop_start, innerloop_end, innerloop_step, fn(i,j) )
+
+		// outer loop
+		for (var i = arguments[0]; i <= arguments[1]; i += arguments[2]) {
+
+			// inner loop
+			for (var j = arguments[3]; j <= arguments[4]; j += arguments[5]) {
+				// call supplied function with both loop counters
+				arguments[6](i, j);
+			}
+
 		}
 
 	}
