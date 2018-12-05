@@ -29,6 +29,9 @@ function simple() {
 
 	// red fill
 	fill('yellow');
+
+	// angles counted in degrees, not radians
+	angleMode(DEGREES);
 }
 
 
