@@ -61,10 +61,10 @@ function square(x, y, w) {
 function randomNumber() {
 
 	if (arguments.length == 1) {
-		return int( random(arguments[0] + 1) );
+		return floor( random(arguments[0] + 1) );
 	}
 	else if (arguments.length == 2) {
-		return int( random(arguments[0], arguments[1] + 1) );
+		return floor( random(arguments[0], arguments[1] + 1) );
 	}
 }
 
