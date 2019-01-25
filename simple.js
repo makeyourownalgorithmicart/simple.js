@@ -38,17 +38,8 @@ function simple() {
 
 //// simple shapes ////
 
-// circle
-// friendlier than ellipse
-function circle(x, y, diameter) {
-	ellipse(x, y, diameter);
-}
-
-// square
-// friendlier than rectangle
-function square(x, y, w) {
-	rect(x, y, w, w);
-}
+// circle() removed from simple.js as it was introduced by p5js 0.7.3
+// square() removed from simple.js as it was introduced by p5js 0.7.3
 
 
 //// simple convenience functions ////
