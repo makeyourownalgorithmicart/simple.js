@@ -41,6 +41,13 @@ function simple() {
 // circle() removed from simple.js as it was introduced by p5js 0.7.3
 // square() removed from simple.js as it was introduced by p5js 0.7.3
 
+// circle() temporarily added back while p5js upstream changes radius to diameter
+// circle
+// friendlier than ellipse
+p5.prototype.circle = function (x, y, diameter) {
+	ellipse(x, y, diameter);
+}
+
 
 //// simple convenience functions ////
 
